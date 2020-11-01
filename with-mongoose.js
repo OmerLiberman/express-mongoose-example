@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const ProductModel = require('./models/product');
 
-const uri = 'mongodb+srv://omer11:omer11@cluster0.xtuj5.mongodb.net/products?retryWrites=true&w=majority';
+const uri = MONGODB_URI;
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
   console.log('Connected to mongoose!');
