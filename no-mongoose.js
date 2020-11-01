@@ -1,6 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 
-const url = 'mongodb+srv://omer11:omer11@cluster0.xtuj5.mongodb.net/products?retryWrites=true&w=majority';
+const url = MONGODB_URI;
 
 const createProduct = async (req, res, next) => {
   const product = {
